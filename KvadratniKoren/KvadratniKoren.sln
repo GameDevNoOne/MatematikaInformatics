@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KvadratniKoren", "KvadratniKoren.csproj", "{5B302306-1BB3-4BF3-8065-62EAC16E39DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B302306-1BB3-4BF3-8065-62EAC16E39DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B302306-1BB3-4BF3-8065-62EAC16E39DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B302306-1BB3-4BF3-8065-62EAC16E39DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B302306-1BB3-4BF3-8065-62EAC16E39DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8A77E1CF-3DB1-4478-A7EF-643C2D63D6E4}
+	EndGlobalSection
+EndGlobal

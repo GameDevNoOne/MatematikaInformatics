@@ -1,0 +1,11 @@
+            int a = 1;
+            int b = a*a;
+            while(korenjenec > a && b != korenjenec)
+            {
+                //++ funkcija prišteje int ena
+                a++;
+                b = a * a;
+                //Vstaljeno za testiranje delovanje kode
+                Console.WriteLine("a je {0}",a);
+            }
+            return a;
