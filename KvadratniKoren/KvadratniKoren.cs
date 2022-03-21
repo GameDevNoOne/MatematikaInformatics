@@ -6,18 +6,18 @@ namespace SquareRoot
     {
         //Koren - Število, ki ga korenim
         //a - Število, ki je koren
-        public static long? Koren(long korenjenec)
+        public static float? Koren(float korenjenec)
         {
-            long a = 1;
-            long b = korenjenec / a;
+            float a = 1;
+            float b = korenjenec / a;
             while (true)
             {
 
-                long c = (a + b) / 2;
-                long kvadrat = c * c;
+                float c = (a + b) / 2;
+                float kvadrat = c * c;
                 if (kvadrat == korenjenec)
                 {
-                    return c;
+                    return (long?)c;
                 }
                 if(kvadrat > korenjenec)
                 {
@@ -27,7 +27,7 @@ namespace SquareRoot
                 {
                     a = c;
                 }
-                if(b - a <= 1)
+                if(b - a <= 0.001)
                 {
                     return null;
                 }
