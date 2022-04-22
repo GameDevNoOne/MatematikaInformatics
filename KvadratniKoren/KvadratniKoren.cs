@@ -15,23 +15,24 @@ namespace SquareRoot
 
                 long c = (a + b) / 2;
                 long kvadrat = c * c;
+                long razlika = b - a;
                 if (kvadrat == korenjenec)
                 {
                     return (long?)c;
                 }
-                if(kvadrat > korenjenec)
+                if (kvadrat > korenjenec)
                 {
                     b = c;
                 }
-                if(kvadrat < korenjenec)
+                if (kvadrat < korenjenec)
                 {
                     a = c;
                 }
-                if(b - a <= 1)
+                if (razlika <= 1)
                 {
                     return null;
                 }
-                
+
             }
         }
     }

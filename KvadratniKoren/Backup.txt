@@ -1,11 +1,60 @@
-            int a = 1;
-            int b = a*a;
-            while(korenjenec > a && b != korenjenec)
+using System;
+
+namespace SquareRoot
+{
+    public class KvadratniKoren
+    {
+        //Koren - Število, ki ga korenim
+        //a - Število, ki je koren
+        public static long? Koren(long korenjenec)
+        {
+            long a = 1;
+            long b = korenjenec / a;
+            while (true)
             {
-                //++ funkcija prišteje int ena
-                a++;
-                b = a * a;
-                //Vstaljeno za testiranje delovanje kode
-                Console.WriteLine("a je {0}",a);
+
+                long c = (a + b) / 2;
+                long kvadrat = c * c;
+                long razlika = b - a;
+                if (kvadrat == korenjenec)
+                {
+                    return (long?)c;
+                }
+                if(kvadrat > korenjenec)
+                {
+                    b = c;
+                }
+                if(kvadrat < korenjenec)
+                {
+                    a = c;
+                }
+                if(razlika <= 1)
+                {
+                    return null;
+                }
+                
             }
-            return a;
+        }
+    }
+}
+
+using System;
+
+namespace KvadratniKorenjenec
+{
+	static class Program
+	{
+		static void Main(string[] args)
+        {
+			Console.WriteLine("Type the square root you are trying to get");
+			long korenjenec = Int64.Parse(Console.ReadLine());
+            long? korenjenoStevilo = SquareRoot.KvadratniKoren.Koren(korenjenec);
+			if(korenjenoStevilo == null)
+            {
+				Console.WriteLine("Korenjenec {0} nima celega korena", korenjenec);
+				return;
+            }
+			Console.WriteLine("Koren števila {0} je {1}",korenjenec, korenjenoStevilo);
+        }
+	}
+}	
