@@ -4,6 +4,7 @@ namespace DecimalConverter
 {
     public static class Program
     {
+        // Glavni program
         public static void Main()
         {
             Console.WriteLine("Napišite decimalni zapis števila");
